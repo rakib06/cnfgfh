@@ -26,7 +26,7 @@
       [
       <span class="time">{{ endExecution.time }}</span>]
       <span class="task">{{ endExecution.name }}</span>
-      <a href="#" @click="emit('onFinish')">查看</a>
+      <a href="#" @click="emit('onFinish')">Check</a>
     </p>
   </div>
 </template>
@@ -41,7 +41,7 @@ import { loadAnimationData, loadBGM } from "./editor/loadSource";
 const executions = DATA.executions;
 const progressBarText = ref("--------------------------");
 const endExecution = reactive({
-  name: "制作完成",
+  name: "manufacture complete",
   time: "",
   visible: false,
   duration: undefined,

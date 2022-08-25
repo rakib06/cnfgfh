@@ -6,8 +6,8 @@
           <div class="content-inside">
             <img class="photo" :src="photo" />
             <p>{{ data.groom }} & {{ data.bride }}</p>
-            <p>地点：{{ data.address }}</p>
-            <p>时间：{{ data.date }}{{ data.dateEx }}</p>
+            <p>location：{{ data.address }}</p>
+            <p>time：{{ data.date }}{{ data.dateEx }}</p>
           </div>
         </div>
         <div class="cover left">
@@ -54,7 +54,7 @@ watch(isOpening, (val) => {
 const play = (animationData: object) => {
   setTimeout(() => {
     playExplosion(wedding.value, animationData, (evt) => {
-      //检测是否点击到seal
+      
       let { x, y } = evt;
       let {
         left,

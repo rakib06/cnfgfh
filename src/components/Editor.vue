@@ -1,8 +1,8 @@
 <template>
   <div class="wedding-editor" ref="editor">
-    <!--代码编辑区-->
+    
     <pre><code v-html="highlightedCode"></code> </pre>
-    <!--模拟编译-->
+    
     <executions
       :canExecute="editorData.canExecute"
       @onUpdating="scrollToBottom"
@@ -10,8 +10,8 @@
       @music_ready="musicReady"
       @lottie_ready="lottieReady"
     />
-    <!--展示邀请函-->
-    <invitation :canOpen="editorData.canOpen" @music_status="musicStatus" ref="invit" />
+    
+   
   </div>
 </template>
 
@@ -70,7 +70,6 @@ const scrollToBottom = () => {
 
 onUpdated(scrollToBottom);
 
-//打字
 progressivelyTyping(editorData);
 
 watch(() => editorData.canOpen, (val) => {
@@ -96,9 +95,9 @@ const lottieReady = (source: any) => {
 }
 
 onMounted(() => {
-  //绘制背景
+  
   let context = drawBackground();
-  //放烟花
+  
   excuteFireworks(context);
 });
 

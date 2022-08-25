@@ -31,7 +31,7 @@ export default defineConfig({
     },
     manifest: {
       name: "Wedding Invitation",
-      short_name: "婚礼邀请",
+      short_name: "wedding invitation",
       description: "电子邀请函",
       theme_color: "#DB7093",
       lang: "zh-CN",
@@ -43,7 +43,7 @@ export default defineConfig({
           src: 'icon/android-chrome-192x192.png',
           sizes: '192x192',
           type: 'image/png',
-        },       {
+        }, {
           src: 'icon/android-chrome-512x512.png',
           sizes: '512x512',
           type: 'image/png',

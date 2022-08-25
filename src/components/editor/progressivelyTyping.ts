@@ -10,7 +10,7 @@ interface DataType {
     canExecute: boolean;
 }
 
-// 代码输入
+
 export default function progressivelyTyping(editorData: DataType) {
 
     const source_code = data.code;

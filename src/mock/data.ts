@@ -1,12 +1,12 @@
-const groom = "李雷";
-const bride = "韩梅梅";
+const groom = "Rockib";
+const bride = "Shithi";
 
-let date = "2005年12月16日";
-let dateEx = "(农历十一月十六)";
-let address = "天涯八卦";
+let date = "September 16, 2022";
+let dateEx = "Badro 30, 2022";
+let address = "Mirpur";
 
-const lottie_name = "partyyy"; //lottie动画名称
-const music163_id = "1493994313";//网易云音乐id，徐誉滕《天使的翅膀 Angel's Wing》
+const lottie_name = "partyyy";
+const music163_id = "1493994313";
 
 let preCode = "";
 
@@ -31,9 +31,9 @@ export default {
   preCode,
   code,
   executions: [{
-    name: '制作中...',
+    name: 'Making...',
     time: '',
     visible: false,
-    duration:undefined
+    duration: undefined
   }]
 }
